@@ -6,16 +6,18 @@ import { FaX } from "react-icons/fa6";
 import Image from "next/image";
 
 type props = {
-  links: {
-    path: string;
-    name: string;
-  }[];
   toggle: boolean;
   action: () => void;
   handleModal: () => void;
-}
+};
 
-const Menu = ({ links, toggle, action }: props) => {
+const Menu = ({ toggle, action }: props) => {
+   const links = [
+     { path: "/", name: "Home" },
+     { path: "/explore", name: "Explore" },
+     { path: "/library", name: "Library" },
+   ];
+   
   const pathname = usePathname();
 
   return (

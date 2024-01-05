@@ -1,6 +1,6 @@
 "use client";
 import { FC } from "react";
-import { BooksData } from "@/app/data/books/page";
+import { BooksData } from "@/app/data/books/book";
 import Image from "next/image";
 import { FaArrowLeft } from "react-icons/fa6";
 import { useDispatch, useSelector } from "react-redux";
